@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+
+# Mac
+.DS_Store
+
+# IDEA
+*/*/cmake-build-debug
+*/*/.idea
