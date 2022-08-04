@@ -38,3 +38,7 @@
 # IDEA
 */*/cmake-build-debug
 */*/.idea
+
+
+# Build
+*/*/build
