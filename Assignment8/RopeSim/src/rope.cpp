@@ -37,7 +37,7 @@ namespace CGL {
             masses.push_back(p);
             springs.push_back(presentSpring);
         }
-//        Comment-in this part when you implement the constructor
+        // Comment-in this part when you implement the constructor
         for (auto &i : pinned_nodes) {
             masses[i]->pinned = true;
         }
@@ -61,7 +61,6 @@ namespace CGL {
                 // TODO (Part 2): Add the force due to gravity, then compute the new velocity and position
                 m->forces += gravity * m->mass;
                 
-
                 // TODO (Part 2): Add global damping
                 if(true)
                 {
