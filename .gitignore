@@ -5,7 +5,9 @@
 *.slo
 *.lo
 *.o
-*.obj
+
+not for graphics
+# *.obj
 
 # Precompiled Headers
 *.gch

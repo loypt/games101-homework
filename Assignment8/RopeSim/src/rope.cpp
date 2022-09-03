@@ -7,6 +7,8 @@
 #include "rope.h"
 #include "spring.h"
 
+#define euler_explisit 0
+
 namespace CGL {
 
     Rope::Rope(Vector2D start, Vector2D end, int num_nodes, float node_mass, float k, vector<int> pinned_nodes)
@@ -69,7 +71,7 @@ namespace CGL {
                 }
 
                 Vector2D a = m->forces / m->mass;
-                if(false)
+                if(euler_explisit)
                 {
                     //Explicit method
                     m->position += m->velocity * delta_t;
