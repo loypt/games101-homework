@@ -30,9 +30,9 @@ void Renderer::Render(const Scene& scene)
     int m = 0;
 
     // change the spp value to change sample ammount
-    int spp = 32;
+    int spp = 256;
     std::cout << "SPP: " << spp << "\n";
-    int num_threads = 32;
+    int num_threads = 64; 
     std::thread th[num_threads];
     int thread_height = scene.height/num_threads;
     auto renderRows = [&](uint32_t start_height, uint32_t end_height) {
