@@ -7,7 +7,7 @@
 #include "rope.h"
 #include "spring.h"
 
-#define euler_explisit 0
+#define euler_explicit 0
 
 namespace CGL {
 
@@ -71,7 +71,7 @@ namespace CGL {
                 }
 
                 Vector2D a = m->forces / m->mass;
-                if(euler_explisit)
+                if(euler_explicit)
                 {
                     //Explicit method
                     m->position += m->velocity * delta_t;
